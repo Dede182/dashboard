@@ -111,7 +111,7 @@ aside{
     }
     @media screen and (min-width:1080px) {
         .list-items a{
-            height: 3rem!important;
+            height: 3rem;
         }
     }
 /* ---@media querry section end */
