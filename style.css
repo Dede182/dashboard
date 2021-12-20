@@ -50,8 +50,9 @@ body{
 }
 aside{
     background:#fff;
-    padding:10px 0px;
-    
+    padding:10px;
+    height: 100%;
+    overflow: hidden;
 }
 .top{
     display:flex;
@@ -88,14 +89,19 @@ aside{
     align-items: center;
     color:var(--color-dark);
     font-size:15px;
-    height:1.6rem;
+    height:2rem;
 }
 .list-items .logout{
     position:absolute;
     bottom:1.3rem;
-    color:red;
 }
-
+#noti{
+    margin-left: 17px;
+    padding:6px 12px;
+    background:#557de1;
+    border-radius: 10px;
+    font-size:16px
+}
 /* @media querry section */
     @media screen and (max-width:760px) {
         .list-items a{
@@ -103,10 +109,9 @@ aside{
             font-size:20px;     
         }
     }
-    @media screen and (min-width:760px) {
+    @media screen and (min-width:1080px) {
         .list-items a{
-            height: 3rem;
-            font-size:20px;     
+            height: 3rem!important;
         }
     }
 /* ---@media querry section end */
