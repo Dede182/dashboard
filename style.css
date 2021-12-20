@@ -94,3 +94,18 @@ aside{
     position:absolute;
     bottom:1.3rem;
 }
+
+/* @media querry section */
+    @media screen and (max-width:760px) {
+        .list-items a{
+            height: 2.6rem;
+            font-size:20px;     
+        }
+    }
+    @media screen and (min-width:760px) {
+        .list-items a{
+            height: 3rem;
+            font-size:20px;     
+        }
+    }
+/* ---@media querry section end */
