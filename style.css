@@ -2,6 +2,7 @@
 
 /* ----rooo variable----- */
 :root {
+    --color:#2853c2;
     --color-primary: #557de1;
     --color-danger: ff7782;
     --color-success: 41flb6;
@@ -42,14 +43,14 @@ body{
 }
 .container{
     width:100%;
-    background:gray;
+    background:rgb(238, 235, 235);
     display:grid;
     gap:1.8rem;
     grid-template-columns:13rem auto 15rem;
     height:100vh;
 }
 aside{
-    background:#fff;
+    background:rgb(238, 235, 235);
     padding:10px;
     height: 100%;
     overflow: hidden;
@@ -138,3 +139,103 @@ aside{
         }
     }
 /* ---@media querry section end */
+/* main section start allllllll */
+
+main{
+    margin-top:15px;
+}
+main h2{
+    font-weight: 600;
+    font-family: sans-serif,roboto;
+}
+main h2 span{
+    color:var(--color-primary)
+}
+.date input{
+    border-radius:5px;
+    padding:2px;
+    background:rgba(176, 170, 170, 0.428);
+    border:none;
+    font-weight: 600;
+}
+.insights{
+    padding:5px;
+    display:grid;
+  
+    gap:1rem;
+}
+.sales{
+    margin-top:10px;
+    height: 180px;
+    width:250px;
+    background:#fff;
+    padding:7px 14px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.184);;
+    z-index: 2;
+}
+.sales span{
+    color:#fff;
+    background:var(--color-primary);
+    border-radius: 25px;
+    padding:7px;
+    margin-bottom: 10px;
+}
+#income{
+    background:#f707cf;
+}
+#expenses{
+    background:#40fc2b;
+}
+.middle{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+}
+.left{
+    width:80%;
+}
+.left h2{
+    font-size:.7rem;
+    margin-bottom: 12px;
+}
+.left h3{
+    font-weight: 600;
+    font-family: sans-serif,fantasy;
+    word-spacing:1px;
+    font-size:2rem;
+}
+.right{
+    width:100%;
+    height:100px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+.circular-progress{
+    width:90px;
+    height:90px;
+    background:blue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom:10px;
+}
+.circular-progress::before{
+    content:" ";
+    position:absolute;
+    width:75%;
+    height:75%;
+    border-radius: 50%;
+    background:#fff;
+
+}
+.valued-num p{
+    color:#000;
+    position:relative;
+    font-weight: 600;
+}
+/* main section end alllllllll */
