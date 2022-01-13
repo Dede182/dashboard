@@ -135,17 +135,18 @@ aside{
             grid-template-columns:none!important;
         }
         .sales{
-            width:350px!important;
+            width:320px!important;
         }
         .right{
             justify-content: flex-end!important;
         }
         table{
             width:100%!important;
-            font-size:.9em!important;
+            font-size:.7em!important;
+            margin:0px 10px;
         }
         tbody tr td{
-            padding:6px 4px!important;
+            padding:6px 3px!important;
         }
         
     }
@@ -188,6 +189,7 @@ main{
    padding-bottom:50px;
    display:grid;
    grid-gap: 1.5em;
+   padding:20px;
 }
 main h2{
     font-weight: 600;
