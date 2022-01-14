@@ -1,5 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
-
+.dark-theme-variables {
+    background: #0a0a0a!important;
+    transition:all .5s ease;
+}
+.font-dark-theme,.font-dark-theme>.list-items a{
+    color:#fff;
+    background:rgba(20, 20, 20, 0.476)!important;
+    transition:all .5s ease;
+}
+.box-dark{
+    color:#fff;
+    background:rgba(29, 28, 28, 0.802)!important;
+    transition:all .5s ease;
+}
+.box-dark:hover{
+    background:rgb(41, 40, 40)!important;
+}
+.font-dark-theme .circular-progress::before,.font-dark-theme .cirvalue{
+    color:#fff;
+    background:rgb(20, 20, 20)!important;
+    transition:all .5s ease
+}
+.lightwhite{
+    color:rgb(200, 201, 190);
+    background:rgb(15, 15, 15);
+    transition:all .5s ease;
+}
 /* ----rooo variable----- */
 :root {
     --color:#2853c2;
@@ -49,13 +75,15 @@ body{
     grid-template-columns:13rem auto;
     height:100vh;
     overflow:hidden;
-   
+    transition:all .5s ease;
+
 }
 aside{
     background:rgb(238, 235, 235);
     padding:10px;
     height: 100%;
-   
+    transition:all .5s ease;
+
 }
 .top{
     display:flex;
@@ -122,6 +150,21 @@ aside{
     border-radius: 10px;
     font-size:16px
 }
+.switch{
+    width:40px;
+    border:2px solid #000;
+    display: flex;
+    height:35px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:all .5s ease;
+}
+.switch span{
+    transition:all .5s ease;
+}
+
 /* @media querry section */
     @media screen and (max-width:760px) {
         .list-items a{
@@ -140,12 +183,12 @@ aside{
         .right{
             justify-content: flex-end!important;
         }
-        table{
+        .recent-order  table{
             width:100%!important;
             font-size:.7em!important;
             
         }
-        tbody tr td{
+        .recent-order tbody tr td{
             padding:6px 3px!important;
         }
         
@@ -164,7 +207,7 @@ aside{
         .list-items a{
             height: 1.7rem;
         }
-        table{
+        .recent-order  table{
             width:80%!important;
             font-weight: 600;
             font-size: 100%;
@@ -264,7 +307,6 @@ main h2 span{
 .circular-progress{
     width:90px;
     height:90px;
-    background:blue;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -296,7 +338,7 @@ main h2 span{
     align-self: flex-start;
     margin-bottom: 10px;
 }
-table{
+.recent-order table{
     height:50vh;
     width:40rem;
     background:#fff;
@@ -305,11 +347,11 @@ table{
     border-radius: 10px;
     box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.184);
 }
-tr{
+.recent-order  tr{
     border-bottom:4px solid black;
     text-align: center;
 }
-tbody tr td{
+.recent-order tbody tr td{
     padding:6px 10px;
     
 }
@@ -326,7 +368,7 @@ tbody tr td{
 .fail{
     color:rgb(128, 4, 4);
 }
-table tbody tr{
+.recent-order table tbody tr{
     border-bottom:1px solid rgba(176, 10, 10, 0.224);
   
 }
