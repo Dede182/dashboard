@@ -70,12 +70,17 @@
                         <!-- aside strat for user catagories end -->
                     <!-- main center content start -->
             <main>
+
                 <h2>Dash<span>board</span></h2>
+                <div class="switch">
+                    <span id = "lightmode" class="material-icons">light_mode</span>
+                </div>
+               
                 <div class="date">
                     <input type = "date">
                 </div>
                 <div class="insights">
-                    <div class="sales">
+                    <div id = "sales" class="sales">
                         <span class = "material-icons">analytics</span>
                         <div class="middle">
                             <div class="left">
@@ -92,7 +97,7 @@
                         </div>
                         <small>last 24 hours</small>
                     </div>
-                    <div class="sales">
+                    <div id = "sales" class="sales">
                         <span id ="income" class = "material-icons">stacked_line_chart</span>
                         <div class="middle">
                             <div class="left">
@@ -129,7 +134,7 @@
                 </div>
                     <div class="recent-order">
                         <h2>Recent Orders</h2>
-                         <table>
+                         <table class = "recent-table">
                               <thead>
                                  <tr>
                                       <th>Product Name</th>
@@ -255,7 +260,7 @@
                         </div>
                         <div class="rights">
                             <div class="info">
-                                <h3>new customers</h3>
+                                <h3>customers</h3>
                                 <small>Last 24 hrs</small>
                             </div>
                             <h5 class="success">+10%</h5>
