@@ -193,16 +193,17 @@ aside{
         }
         
     }
-   
+    @media screen and (min-width:760px){
+        .sales{
+            width:400px!important;  
+        }
+    }
     @media screen and (max-width:1000px){
         .insights{
             display:flex;
             align-items: center;
             justify-content: center;
             grid-template-columns:none!important;
-        }
-        .sales{
-            width:400px!important;
         }
         .right{
             justify-content: flex-end!important;
