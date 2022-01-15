@@ -195,11 +195,28 @@ aside{
     }
    
     @media screen and (max-width:1000px){
+        .insights{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns:none!important;
+        }
+        .sales{
+            width:400px!important;
+        }
+        .right{
+            justify-content: flex-end!important;
+        }
         .container{
             grid-template-columns: none;
         }
          aside{
             display: none;
+        }
+        .recent-order  table{
+            width:90%!important;
+            font-size:.9em;
+            
         }
     }
     @media screen and (min-width:1080px) {
