@@ -66,17 +66,7 @@ light.addEventListener('click',function rew(){
      }
     
 )
-// light.innerText = b;
-// if(light.innerText = b){
-//     light.addEventListener('click',()=>{
-//       light.innerText = a;  
-//     }
-//     )
-// }
-
-
-
-
+document.getElementById('datePicker').valueAsDate = new Date();
 
 
 
