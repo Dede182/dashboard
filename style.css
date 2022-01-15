@@ -5,8 +5,11 @@
 }
 .font-dark-theme,.font-dark-theme>.list-items a{
     color:#fff;
-    background:rgba(20, 20, 20, 0.476)!important;
+    background:rgba(20, 20, 20,1)!important;
     transition:all .5s ease;
+}
+.font-dark-theme .showall{
+    color:#220ff1;
 }
 .box-dark{
     color:#fff;
@@ -26,6 +29,30 @@
     background:rgb(15, 15, 15);
     transition:all .5s ease;
 }
+.menu span{
+    cursor:pointer;
+    color:var(--color-dark);
+    display:none;
+}
+.menu{
+    display:inline-block;
+    width:100px;
+}
+.calculate span{
+    font-size:2.3em;
+}
+.toppo{
+    height:60px;
+    display: flex;
+    align-items: center;
+    width:100%;
+    padding:0px 10px;
+    justify-content: space-between;
+}
+.right_toppo{
+    display: flex;
+}
+
 /* ----rooo variable----- */
 :root {
     --color:#2853c2;
@@ -166,7 +193,7 @@ aside{
 }
 
 /* @media querry section */
-    @media screen and (max-width:760px) {
+    @media screen and (max-width:820px) {
         .list-items a{
             height: 2.4rem;
             font-size:20px;         
@@ -193,17 +220,13 @@ aside{
         }
         
     }
-    @media screen and (max-width:980px){
-        .sales{
-            width:320px!important;  
-        }
-    }
-    @media screen and (max-width:1000px){
+    @media screen and (max-width:1080px){
         .insights{
             display:flex;
             align-items: center;
             justify-content: center;
-            grid-template-columns:none!important;
+            grid-template-columns:normal!important;
+
         }
         .right{
             justify-content: flex-end!important;
@@ -212,7 +235,10 @@ aside{
             grid-template-columns: none;
         }
          aside{
-            display: none;
+            position: absolute;
+            left:-300px;
+            width:250px;
+            z-index: 4;
         }
         .recent-order  table{
             width:90%!important;
@@ -220,7 +246,7 @@ aside{
             
         }
     }
-    @media screen and (min-width:1080px) {
+    @media screen and (min-width:1020px) {
         
         .list-items a{
             height: 1.7rem;
@@ -243,14 +269,14 @@ aside{
 /* main section start allllllll */
 
 main{
-    margin-top:15px;
+    margin-top:0px;
    width:100%;
    height:100vh;
    overflow-y:scroll;
    padding-bottom:50px;
    display:grid;
    grid-gap: 1.5em;
-   padding:20px;
+   padding:0px 20px;
 }
 main h2{
     font-weight: 600;
