@@ -193,9 +193,9 @@ aside{
         }
         
     }
-    @media screen and (min-width:760px){
+    @media screen and (max-width:980px){
         .sales{
-            width:400px!important;  
+            width:320px!important;  
         }
     }
     @media screen and (max-width:1000px){
