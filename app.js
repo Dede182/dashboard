@@ -66,7 +66,18 @@ light.addEventListener('click',function rew(){
      }
     
 )
+let menu = document.querySelector('.menu');
+let close = document.querySelector(".close");
 document.getElementById('datePicker').valueAsDate = new Date();
+if(screen.width < 1080){
+    document.querySelector(".menu>span").style.display = "block";
+    document.querySelector(".close").style.display = "block";
+}
 
-
+menu.addEventListener("click",()=>{
+    document.querySelector('aside').style.left = '0px'
+})
+close.addEventListener("click",()=>{
+    document.querySelector('aside').style.left = '-300px'
+})
 
