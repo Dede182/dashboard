@@ -39,6 +39,8 @@ light.addEventListener('click',function rew(){
     document.querySelector('.update-box').classList.toggle('box-dark');
     document.querySelector('.container').classList.toggle('dark-theme-variables');
     document.querySelector(".switch").classList.toggle('lightwhite')
+    document.querySelector('.calc-wrapper').classList.toggle('font-dark-theme');
+
 
     for(let i =0;i<dede.length;i++){
         dede[i].classList.toggle('box-dark')
@@ -73,7 +75,12 @@ if(screen.width < 1080){
     document.querySelector(".menu>span").style.display = "block";
     document.querySelector(".close").style.display = "block";
 }
-
+document.querySelector(".calculate").addEventListener('click',()=>{
+    document.querySelector(".calc-wrapper").style.top = "30px";
+})
+document.querySelector(".closer").addEventListener('click',()=>{
+    document.querySelector(".calc-wrapper").style.top = "-1000px";
+})
 menu.addEventListener("click",()=>{
     document.querySelector('aside').style.left = '0px'
 })
