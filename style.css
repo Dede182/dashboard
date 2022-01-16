@@ -238,7 +238,7 @@ aside{
          aside{
             position: fixed;
             left:-300px;
-            width:250px;
+            width:230px;
             z-index: 4;
         }
         .recent-order  table{
