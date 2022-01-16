@@ -9,10 +9,10 @@
     margin-left: auto; 
     margin-right: auto; 
     position: absolute;
-    top:30px;
+    top:-1000px;
     padding:20px 40px;
     border:1px solid rgba(42, 41, 41, 0.816);
-    background:rgba(42, 41, 41, 0.911);
+    background:rgba(42, 41, 41, 0.95);
     z-index: 5;
     align-items: center;
     border-radius: 20px;
