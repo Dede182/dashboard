@@ -236,7 +236,7 @@ aside{
             grid-template-columns: none;
         }
          aside{
-            position: absolute;
+            position: fixed;
             left:-300px;
             width:250px;
             z-index: 4;
